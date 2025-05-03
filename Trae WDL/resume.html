@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1 class="animate__animated animate__fadeIn">Resume Builder</h1>
+            
+            <div class="progress-steps">
+                <div class="progress-step active">Personal</div>
+                <div class="progress-step">Experience</div>
+                <div class="progress-step">Education</div>
+                <div class="progress-step">Skills</div>
+            </div>
+
+            <form id="resumeForm">
+                <section class="form-section" id="personalSection">
+                    <h2>Personal Information</h2>
+                    <div class="input-group">
+                        <input type="text" id="fullName" placeholder="Full Name" required>
+                        <input type="text" id="jobTitle" placeholder="Professional Title" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="tel" id="phone" placeholder="Phone" required>
+                        <input type="text" id="location" placeholder="Location" required>
+                        <textarea id="summary" placeholder="Professional Summary" required></textarea>
+                    </div>
+                </section>
+
+                <section class="form-section" id="experienceSection">
+                    <h2>Work Experience</h2>
+                    <div id="experienceItems"></div>
+                    <button type="button" id="addExperience" class="add-btn">
+                        <i class="fas fa-plus"></i> Add Experience
+                    </button>
+                </section>
+
+                <section class="form-section" id="educationSection">
+                    <h2>Education</h2>
+                    <div id="educationItems"></div>
+                    <button type="button" id="addEducation" class="add-btn">
+                        <i class="fas fa-plus"></i> Add Education
+                    </button>
+                </section>
+
+                <section class="form-section" id="skillsSection">
+                    <h2>Skills</h2>
+                    <div class="skill-input-group">
+                        <input type="text" id="skillInput" placeholder="Enter a skill">
+                        <select id="skillLevel">
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                            <option value="Expert">Expert</option>
+                        </select>
+                        <button type="button" id="addSkill" class="add-btn">
+                            <i class="fas fa-plus"></i> Add Skill
+                        </button>
+                    </div>
+                    <div id="skillsList" class="skills-list"></div>
+                </section>
+
+                <div class="form-navigation">
+                    <button type="button" id="prevBtn" class="nav-btn">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    <button type="button" id="nextBtn" class="nav-btn">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="preview-container">
+            <div class="preview-header">
+                <h2>Live Preview</h2>
+                <div class="download-buttons">
+                    <button id="downloadPDF" class="download-btn">
+                        <i class="fas fa-file-pdf"></i> PDF
+                    </button>
+                    <button id="downloadPNG" class="download-btn">
+                        <i class="fas fa-file-image"></i> PNG
+                    </button>
+                    <button id="downloadJPG" class="download-btn">
+                        <i class="fas fa-file-image"></i> JPG
+                    </button>
+                </div>
+            </div>
+            <div id="resumePreview" class="resume-preview"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="resume.js"></script>
+
+</body>
+</html>

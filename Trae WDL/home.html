@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeAI - Smart Resume Builder</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- Background Animation -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-file-alt"></i>
+                <span>Resume-Builder</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#templates">Templates</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="login-btn">Sign In</button>
+                <button class="cta-btn" onclick="window.location.href='resume.html'">Get Started</button>
+            </div>
+            <button class="mobile-menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Create Your Professional Resume with AI</h1>
+                <p>Build stunning resumes in minutes with our AI-powered platform. Stand out from the crowd and land your dream job.</p>
+                <div class="hero-buttons">
+                    <button class="cta-btn" onclick="window.location.href='resume.html'">Start Building <i class="fas fa-arrow-right"></i></button>
+                    <button class="secondary-btn">View Templates</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="number">2M+</span>
+                        <span class="label">Resumes Created</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">95%</span>
+                        <span class="label">Success Rate</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">50+</span>
+                        <span class="label">Templates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Smart Features</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="zoom-in">
+                    <i class="fas fa-magic"></i>
+                    <h3>AI Writing Assistant</h3>
+                    <p>Generate professional bullet points and descriptions instantly with AI</p>
+                </div>
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-palette"></i>
+                    <h3>Custom Themes</h3>
+                    <p>Personalize colors, fonts, and layouts to match your style</p>
+                </div>
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Auto Save</h3>
+                    <p>Never lose your progress with automatic cloud saving</p>
+                </div>
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>PDF Export</h3>
+                    <p>Download your resume in perfect PDF format</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Section (Updated) -->
+    <section id="templates" class="templates-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Professional Templates</h2>
+            <div class="templates-grid">
+                <!-- First Template Card -->
+                <div class="template-card" data-aos="fade-up">
+                    <div class="template-preview">
+                        <img src="tempelate1.jpg" alt="Modern Template">
+                        <div class="template-overlay">
+                            <button class="preview-btn"><i class="fas fa-eye"></i> Preview</button>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Modern Professional</h3>
+                        <p>Clean and contemporary design</p>
+                        <button class="use-template-btn">Use Template</button>
+                    </div>
+                </div>
+    
+                <!-- New Template Card 1 -->
+                <div class="template-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="template-preview">
+                        <img src="tempelate2.jpg" alt="Creative Template">
+                        <div class="template-overlay">
+                            <button class="preview-btn"><i class="fas fa-eye"></i> Preview</button>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Creative Professional</h3>
+                        <p>Stand out with unique layouts</p>
+                        <button class="use-template-btn">Use Template</button>
+                    </div>
+                </div>
+    
+                <!-- New Template Card 2 -->
+                <div class="template-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="template-preview">
+                        <img src="tempelate3.jpg" alt="Executive Template">
+                        <div class="template-overlay">
+                            <button class="preview-btn"><i class="fas fa-eye"></i> Preview</button>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Executive Elite</h3>
+                        <p>Professional and sophisticated</p>
+                        <button class="use-template-btn">Use Template</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Editor Preview -->
+    <section id="editor" class="editor-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Build Your Resume</h2>
+            <div class="editor-layout">
+                <div class="editor-form">
+                    <!-- Form fields will be added dynamically -->
+                </div>
+                <div class="preview-panel">
+                    <!-- Real-time preview will be rendered here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Pricing Section -->
+<section id="pricing" class="pricing-section">
+    <div class="container">
+        <h2 data-aos="fade-up">Choose Your Plan</h2>
+        <div class="pricing-toggle">
+            <span>Monthly</span>
+            <label class="switch">
+                <input type="checkbox" id="billing-toggle">
+                <span class="slider"></span>
+            </label>
+            <span>Yearly <span class="save-badge">Save 20%</span></span>
+        </div>
+        <div class="pricing-grid">
+            <!-- Free Plan -->
+            <div class="price-card" data-aos="fade-up">
+                <h3>Free</h3>
+                <div class="price">
+                    <span class="price-amount" data-monthly="$0" data-yearly="$0">$0</span>
+                    <span class="price-period">/month</span>
+                </div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Basic Templates</li>
+                    <li><i class="fas fa-check"></i> PDF Export</li>
+                    <li><i class="fas fa-check"></i> Basic AI Suggestions</li>
+                </ul>
+                <button class="price-btn" onclick="window.location.href='resume.html'">Get Started</button>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="price-card popular" data-aos="fade-up" data-aos-delay="100">
+                <div class="price-badge">Most Popular</div>
+                <h3>Pro</h3>
+                <div class="price">
+                    <span class="price-amount" data-monthly="$15" data-yearly="$144">$15</span>
+                    <span class="price-period">/month</span>
+                </div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> All Basic Features</li>
+                    <li><i class="fas fa-check"></i> Advanced AI Writing</li>
+                    <li><i class="fas fa-check"></i> Custom Themes</li>
+                    <li><i class="fas fa-check"></i> Priority Support</li>
+                </ul>
+                <button class="price-btn" onclick="window.location.href='resume.html'">Get Started</button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="price-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="price-badge">Premium</div>
+                <h3>Enterprise</h3>
+                <div class="price">
+                    <span class="price-amount" data-monthly="$29" data-yearly="$288">$29</span>
+                    <span class="price-period">/month</span>
+                </div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> All Pro Features</li>
+                    <li><i class="fas fa-check"></i> Team Collaboration</li>
+                    <li><i class="fas fa-check"></i> API Access</li>
+                    <li><i class="fas fa-check"></i> Custom Branding</li>
+                    <li><i class="fas fa-check"></i> 24/7 Support</li>
+                </ul>
+                <button class="price-btn">Contact Sales</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section">
+    <div class="container">
+        <h2 data-aos="fade-up">What Users Say</h2>
+        <div class="testimonials-slider">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card" data-aos="fade-up">
+                <div class="testimonial-content">
+                    <p>"This platform helped me land my dream job. The AI suggestions were incredibly helpful!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="user1.jpg" alt="User">
+                    <div class="author-info">
+                        <h4>John Doe</h4>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="testimonial-content">
+                    <p>"The AI suggestions are spot-on! Made my resume stand out and got multiple interview calls."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="user2.jpg" alt="User">
+                    <div class="author-info">
+                        <h4>Emily Chen</h4>
+                        <p>Marketing Manager</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="testimonial-content">
+                    <p>"Professional templates and easy customization. Best resume builder I've used!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="user3.jpg" alt="User">
+                    <div class="author-info">
+                        <h4>Michael Brown</h4>
+                        <p>Product Designer</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- FAQ Section -->
+<section id="faq" class="faq-section">
+    <div class="container">
+        <h2 data-aos="fade-up">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <!-- FAQ 1 -->
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>How does the AI writing assistant work?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>The AI analyzes your inputs and generates optimized content for various resume sections, including skills, experience, and achievements.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-question">
+                    <h3>Can I export my resume in different formats?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you can export your resume in PDF, DOCX, and TXT formats. Premium users get access to additional formats and customization options.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-question">
+                    <h3>Is my data secure?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We use industry-standard encryption and security measures to protect your data. Your information is never shared without your consent.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="faq-question">
+                    <h3>Can I cancel my subscription anytime?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you can cancel your subscription at any time. No questions asked, and we offer a 30-day money-back guarantee.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Add before the footer section -->
+<!-- Help & Support Section -->
+<section id="help" class="help-section">
+    <div class="container">
+        <h2 data-aos="fade-up">Need Help?</h2>
+        <div class="help-wrapper">
+            <div class="help-content" data-aos="fade-right">
+                <h3>Get Support from Our Team</h3>
+                <p>Having trouble? Our support team is here to help you 24/7. Fill out the form and we'll get back to you as soon as possible.</p>
+                <div class="support-info">
+                    <div class="support-item">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                    <div class="support-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Quick Response</span>
+                    </div>
+                </div>
+            </div>
+            <form id="helpForm" class="help-form" data-aos="fade-left">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="issue">Issue Type</label>
+                    <select id="issue" required>
+                        <option value="">Select an issue type</option>
+                        <option value="technical">Technical Issue</option>
+                        <option value="billing">Billing Question</option>
+                        <option value="feature">Feature Request</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Description</label>
+                    <textarea id="message" required placeholder="Describe your issue in detail"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Submit Request</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Feedback Section -->
+<section id="feedback" class="feedback-section">
+    <div class="container">
+        <h2 data-aos="fade-up">Share Your Feedback</h2>
+        <div class="feedback-wrapper">
+            <form id="feedbackForm" class="feedback-form" data-aos="zoom-in">
+                <div class="rating-group">
+                    <label>How would you rate your experience?</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1"><i class="fas fa-star"></i></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="feedbackText">Your Feedback</label>
+                    <textarea id="feedbackText" required placeholder="Tell us what you think..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Feedback</span>
+                    <i class="fas fa-heart"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Success Modal -->
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <i class="fas fa-check-circle"></i>
+        <h3>Thank You!</h3>
+        <p>Your message has been submitted successfully. Our team will get back to you soon.</p>
+        <button class="close-modal">Close</button>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ResumeAI</h3>
+                    <p>Create professional resumes in minutes with AI assistance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#templates">Templates</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@resumeai.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ResumeAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="home.js"></script>
+
+    
+    <!-- Add before closing body tag -->
+<div class="social-popup" id="socialPopup">
+    <div class="popup-content">
+        <h3>Follow Us</h3>
+        <div class="social-grid">
+            <a href="#" class="social-item" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="#" class="social-item" target="_blank">
+                <i class="fab fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+            <a href="#" class="social-item" target="_blank">
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+            <a href="#" class="social-item" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+        <button class="close-popup"><i class="fas fa-times"></i></button>
+    </div>
+</div>
+</body>
+</html>
